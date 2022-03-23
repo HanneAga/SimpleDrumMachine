@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to left top, #f5317c, #fa6f4e);
+  color: white;
+}
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+header p {
+  font-size: 20px;
+}
+
+.squares {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.squares > div {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.square1 {
+  background: #f0ea9a;
+}
+
+.square2 {
+  background: #e03867;
+}
+.square3 {
+  background: #d0bee0;
+}
+.square4 {
+  background: rgb(139, 197, 139);
+}
+.square5 {
+  background: #ed95f5;
+}
+.square6 {
+  background: #8579e0;
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  left: 20%;
+  bottom: 0%;
+  z-index: -1;
+  box-shadow: 0 5px 50px 0 rgb(255, 255, 255);
+}
+
+@keyframes jump0 {
+  0% {
+    bottom: 0%;
+    left: 6%;
+  }
+  50% {
+    bottom: 50%;
+    left: 6%;
+  }
+  100% {
+    bottom: 0%;
+    left: 6%;
+  }
+}
+@keyframes jump1 {
+  0% {
+    bottom: 0%;
+    left: 23%;
+  }
+  50% {
+    bottom: 50%;
+    left: 23%;
+  }
+  100% {
+    bottom: 0%;
+    left: 23%;
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    bottom: 0%;
+    left: 40%;
+  }
+  50% {
+    bottom: 50%;
+    left: 40%;
+  }
+  100% {
+    bottom: 0%;
+    left: 40%;
+  }
+}
+
+@keyframes jump3 {
+  0% {
+    bottom: 0%;
+    left: 56%;
+  }
+  50% {
+    bottom: 50%;
+    left: 56%;
+  }
+  100% {
+    bottom: 0%;
+    left: 56%;
+  }
+}
+
+@keyframes jump4 {
+  0% {
+    bottom: 0%;
+    left: 73%;
+  }
+  50% {
+    bottom: 50%;
+    left: 73%;
+  }
+  100% {
+    bottom: 0%;
+    left: 73%;
+  }
+}
+
+@keyframes jump5 {
+  0% {
+    bottom: 0%;
+    left: 90%;
+  }
+  50% {
+    bottom: 50%;
+    left: 90%;
+  }
+  100% {
+    bottom: 0%;
+    left: 90%;
+  }
+}
+
+.circle {
+  box-shadow: 0 5px 50px 0 rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: -2;
+}
